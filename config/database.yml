@@ -21,5 +21,8 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  pool: 10
+  reaping_frequency: 10
+  reconnect: true
+  url: <%= ENV['APPSDECK_POSTGRESQL_URL'] %>

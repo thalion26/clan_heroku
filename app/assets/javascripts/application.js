@@ -14,6 +14,6 @@
 //= require jquery_ujs
 //= require bootstrap.min
 //= require npm
-//= require showhide
 //= require turbolinks
 //= require_tree .
+//= require showhide
